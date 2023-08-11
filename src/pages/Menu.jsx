@@ -78,12 +78,12 @@ function Menu() {
 ]
   return (
     <>
-    <h1 className='flex ml-36 mt-24 text-[#FFB577] '>OUR MENU<hr className='w-12 mt-3 ml-3 border-t-2  ' /></h1>
-    <div className='flex mt-6 mx-36'>
-    <h1 className='font-bold text-5xl w-[750px]'>Discover <br/> Our menu Chart</h1>
-    <p className='w-[500px] font-thin tracking-widest'>Through True Rich Attended does no end it his mother since favoruable real had half every him cause in packages enquire we up ecstatic. Through True Rick Attended does no end it his mother.</p>
+    <h1 className='flex ml-12 md:ml-36 mt-24 text-[#FFB577] '>OUR MENU<hr className='w-12 mt-3 ml-3 border-t-2  ' /></h1>
+    <div className='flex flex-col md:flex-row ml-12 md:ml-0 mt-6 md:mx-36'>
+    <h1 className='font-bold text-5xl md:ml-36 w-[500px] md:w-[750px]'>Discover <br/> Our menu Chart</h1>
+    <p className='w-[450px] md:w-[500px] mt-6 md:mt-0 font-thin tracking-widest'>Through True Rich Attended does no end it his mother since favoruable real had half every him cause in packages enquire we up ecstatic. Through True Rick Attended does no end it his mother.</p>
     </div>
-    <div className='flex ml-36 mt-12 gap-x-12'>
+    <div className='flex ml-12 md:ml-36 mt-12 gap-x-10 md:gap-x-12'>
       <a className='font-bold'>All</a>
       <a className='opacity-70'>Fast Food</a>
       <a className='opacity-70'>Cofee</a>
@@ -91,14 +91,14 @@ function Menu() {
       <a className='opacity-70'>Quafe Cake</a>
       <a className='opacity-70'>Snack</a>
     </div>
-    <div  className='grid grid-cols-3 gap-x-10 gap-y-10 mt-20 mx-36'>
-      {
+    <div  className='grid grid-cols-2 md:grid-cols-3 gap-x-20 md:gap-x-10 gap-y-10 mt-20 md:mx-36'>
+    {
         menu.map((m,key) => (
-          <div key={key} className='hover:scale-90 duration-500'>
+          <div key={key} className='hover:scale-90 duration-500 w-[200px] md:w-[400px] ml-20 md:ml-0 ' >
                             <img className='w-[400px]' src={m.image} />
-                            <div className='flex justify-between py-5 px-5  bg-[#1E1C21]'>
-                                <h1 className='text-2xl'>{m.title}</h1>
-                                <h3 className='text-2xl'>{m.price}</h3>
+                            <div className='flex justify-between py-4 md:py-5 px-5  bg-[#1E1C21]'>
+                                <h1 className='md:text-2xl'>{m.title}</h1>
+                                <h3 className='md:text-2xl'>{m.price}</h3>
                             </div>
                         </div>
         ))

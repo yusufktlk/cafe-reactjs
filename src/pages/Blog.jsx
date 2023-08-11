@@ -5,8 +5,8 @@ import FeaturedBlog from '../components/FeaturedBlog'
 function Blog() {
   return (
     <>
-    <h1 className='text-5xl text-center mt-24 mb-24'>Featured Blogs</h1>
-      <div className='flex gap-x-12 mx-36'>
+    <h1 className='text-5xl text-center mt-20 md:mt-24 mb-20 mb:mb-24'>Featured Blogs</h1>
+      <div className='flex gap-x-12 md:mx-36'>
           <div>
             <img src='b.png' className='h-[541px]' />
           </div>
@@ -23,8 +23,8 @@ function Blog() {
           </div>
       </div>
 
-      <h1 className='text-5xl text-center mt-24 mb-24'>All Articles</h1>
-      <div className='grid grid-cols-2 mx-36 gap-x-4 gap-y-12'>
+      <h1 className='text-5xl ml-6 md:ml-0 md:text-center mt-24 mb-24'>All Articles</h1>
+      <div className='grid md:grid-cols-2 md:mx-36 gap-x-4 gap-y-12 ml-6'>
 
         <BlogCard
         id={1}
